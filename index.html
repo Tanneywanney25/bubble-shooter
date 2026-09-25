@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Shelter</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="hud">
+        <span id="hud-time">Time: 0.0s</span>
+        <span id="hud-near">Near misses: 0</span>
+        <span id="hud-wind">Wind: 0</span>
+        <span id="hud-best">Best: 0.0s</span>
+        <button id="settings-toggle" type="button" aria-expanded="false">Settings</button>
+      </header>
+      <main id="stage-wrap">
+        <div id="stage" aria-label="Storm Shelter game canvas"></div>
+        <aside id="settings-panel" hidden></aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
