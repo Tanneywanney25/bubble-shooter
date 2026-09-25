@@ -37,8 +37,8 @@ export function createSketch(deps: SketchDeps): (p: p5) => void {
     };
 
     p.preload = () => {
-      for (let i = 1; i <= 4; i++) thunderImgs.push(p.loadImage(`/assets/thunder/${i}.png`));
-      for (let i = 1; i <= 12; i++) batImgs.push(p.loadImage(`/assets/bat/bat${i}.png`));
+      for (let i = 1; i <= 4; i++) thunderImgs.push(p.loadImage(`assets/thunder/${i}.png`));
+      for (let i = 1; i <= 12; i++) batImgs.push(p.loadImage(`assets/bat/bat${i}.png`));
     };
 
     p.setup = () => {
